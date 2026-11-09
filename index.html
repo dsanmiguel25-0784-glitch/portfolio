@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dionalyn S. San Miguel - Portfolio</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#FFF8F0;color:#3A2A2A}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;background:#FFF8F0;border-bottom:1px solid #F3D9DE}
+.brand{text-decoration:none;color:#3A2A2A;font-weight:800;display:flex;align-items:center;gap:8px}
+.brand-mark{background:#D65A7A;color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.nav-links{display:flex;gap:18px}
+.nav-links a{text-decoration:none;color:#3A2A2A;font-size:14px}
+.hero{padding:40px 20px;background:#FDE8EC;border-radius:0 0 28px 28px}
+.hero-inner{display:flex;gap:40px;align-items:center;justify-content:space-between;max-width:900px;margin:0 auto}
+.hero-inner div:first-child{flex:1}
+.hero-inner h1{font-size:36px;margin:8px 0;color:#3A2A2A}
+.hero-desc{line-height:1.7;color:#5A4A4A}
+.portrait-frame{flex-shrink:0;width:230px;height:260px;border-radius:18px;overflow:hidden;border:5px solid #fff;box-shadow:0 10px 25px rgba(0,0,0,.12)}
+.portrait-frame img{width:100%;height:100%;object-fit:cover}
+.btn{display:inline-block;background:#3A2A2A;color:#fff;padding:10px 16px;border-radius:99px;text-decoration:none;font-size:13px;margin-right:8px}
+section{padding:30px 20px;max-width:900px;margin:0 auto}
+section h2{color:#D65A7A}
+.about-text{line-height:1.7;color:#5A4A4A}
+.project-list{display:flex;gap:12px;flex-wrap:wrap}
+.project-card{border:1px solid #F3D9DE;background:#fff;border-radius:14px;padding:18px;flex:1;min-width:200px}
+input,textarea{width:100%;padding:10px;margin:6px 0 12px;border:1px solid #F3D9DE;border-radius:10px;font-family:inherit}
+footer{padding:20px;text-align:center;color:#999;border-top:1px solid #F3D9DE}
+</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="#home"><span class="brand-mark">D</span> Dionalyn S. San Miguel</a>
+  <div class="nav-links"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contacts</a></div>
+</nav>
+<header id="home" class="hero"><div class="hero-inner"><div><p>Hello, I'm</p><h1>Dionalyn S. San Miguel</h1><p class="hero-desc">Turning ideas into clean, simple, and beautiful websites. I'm an Information Systems student who loves learning web design. I enjoy creating designs that are easy to understand, pleasant to look at, and comfortable to use. Every project helps me learn something new, from layouts and colors to small details that make a website feel complete. My goal is to keep improving and to build websites that people will truly enjoy exploring.</p></div><div class="portrait-frame"><img src="https://i.ibb.co/hxZVW2JN/893577503-1115115104777589-2167555602373858264-n.jpg" alt="Dionalyn S. San Miguel"></div></div></header>
+<section id="about"><h2>About me</h2><p class="about-text">I'm Dionalyn S. San Miguel, a student who loves learning web design. I enjoy making simple and clean websites that are easy to use.</p></section>
+<section id="projects"><h2>Projects</h2><div class="project-list"><article class="project-card"><h3>Personal Portfolio</h3><p>My first portfolio website made with HTML, CSS, and JS.</p></article><article class="project-card"><h3>School Project</h3><p>A simple website for school activities and assignments.</p></article><article class="project-card"><h3>Mini Blog</h3><p>A clean blog layout for sharing my ideas and learnings.</p></article></div></section>
+<section id="experience"><h2>Experience</h2><p>Learning HTML, CSS, and JavaScript in school. Practicing by building small projects.</p></section>
+<section id="contact"><h2>Contacts</h2><p>Email me: <a href="mailto:dionalyn.sanmiguel@school.edu">dionalyn.sanmiguel@school.edu</a></p><form><label>Name</label><input type="text" placeholder="Your name"><label>Email</label><input type="email" placeholder="Your email"><label>Message</label><textarea placeholder="Your message"></textarea><button class="btn" type="submit">Send</button></form></section>
+<footer><p>© 2026 Dionalyn S. San Miguel</p></footer>
+<script>document.querySelectorAll('a[href^="#"]').forEach(link=>{link.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'});});});</script>
+</body>
+</html>
