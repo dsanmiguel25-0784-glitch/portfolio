@@ -1,45 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dionalyn S. San Miguel - Portfolio</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#FFF8F0;color:#3A2A2A}
-nav{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;background:#FFF8F0;border-bottom:1px solid #F3D9DE}
-.brand{text-decoration:none;color:#3A2A2A;font-weight:800;display:flex;align-items:center;gap:8px}
-.brand-mark{background:#D65A7A;color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center}
-.nav-links{display:flex;gap:18px}
-.nav-links a{text-decoration:none;color:#3A2A2A;font-size:14px}
-.hero{padding:40px 20px;background:#FDE8EC;border-radius:0 0 28px 28px}
-.hero-inner{display:flex;gap:40px;align-items:center;justify-content:space-between;max-width:900px;margin:0 auto}
-.hero-inner div:first-child{flex:1}
-.hero-inner h1{font-size:36px;margin:8px 0;color:#3A2A2A}
-.hero-desc{line-height:1.7;color:#5A4A4A}
-.portrait-frame{flex-shrink:0;width:230px;height:260px;border-radius:18px;overflow:hidden;border:5px solid #fff;box-shadow:0 10px 25px rgba(0,0,0,.12)}
-.portrait-frame img{width:100%;height:100%;object-fit:cover}
-.btn{display:inline-block;background:#3A2A2A;color:#fff;padding:10px 16px;border-radius:99px;text-decoration:none;font-size:13px;margin-right:8px}
-section{padding:30px 20px;max-width:900px;margin:0 auto}
-section h2{color:#D65A7A}
-.about-text{line-height:1.7;color:#5A4A4A}
-.project-list{display:flex;gap:12px;flex-wrap:wrap}
-.project-card{border:1px solid #F3D9DE;background:#fff;border-radius:14px;padding:18px;flex:1;min-width:200px}
-input,textarea{width:100%;padding:10px;margin:6px 0 12px;border:1px solid #F3D9DE;border-radius:10px;font-family:inherit}
-footer{padding:20px;text-align:center;color:#999;border-top:1px solid #F3D9DE}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio ni Dionalyn</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-  <a class="brand" href="#home"><span class="brand-mark">D</span> Dionalyn S. San Miguel</a>
-  <div class="nav-links"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contacts</a></div>
-</nav>
-<header id="home" class="hero"><div class="hero-inner"><div><p>Hello, I'm</p><h1>Dionalyn S. San Miguel</h1><p class="hero-desc">Turning ideas into clean, simple, and beautiful websites. I'm an Information Systems student who loves learning web design. I enjoy creating designs that are easy to understand, pleasant to look at, and comfortable to use. Every project helps me learn something new, from layouts and colors to small details that make a website feel complete. My goal is to keep improving and to build websites that people will truly enjoy exploring.</p></div><div class="portrait-frame"><img src="https://i.ibb.co/hxZVW2JN/893577503-1115115104777589-2167555602373858264-n.jpg" alt="Dionalyn S. San Miguel"></div></div></header>
-<section id="about"><h2>About me</h2><p class="about-text">I'm Dionalyn S. San Miguel, a student who loves learning web design. I enjoy making simple and clean websites that are easy to use.</p></section>
-<section id="projects"><h2>Projects</h2><div class="project-list"><article class="project-card"><h3>Personal Portfolio</h3><p>My first portfolio website made with HTML, CSS, and JS.</p></article><article class="project-card"><h3>School Project</h3><p>A simple website for school activities and assignments.</p></article><article class="project-card"><h3>Mini Blog</h3><p>A clean blog layout for sharing my ideas and learnings.</p></article></div></section>
-<section id="experience"><h2>Experience</h2><p>Learning HTML, CSS, and JavaScript in school. Practicing by building small projects.</p></section>
-<section id="contact"><h2>Contacts</h2><p>Email me: <a href="mailto:dionalyn.sanmiguel@school.edu">dionalyn.sanmiguel@school.edu</a></p><form><label>Name</label><input type="text" placeholder="Your name"><label>Email</label><input type="email" placeholder="Your email"><label>Message</label><textarea placeholder="Your message"></textarea><button class="btn" type="submit">Send</button></form></section>
-<footer><p>© 2026 Dionalyn S. San Miguel</p></footer>
-<script>document.querySelectorAll('a[href^="#"]').forEach(link=>{link.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'});});});</script>
+
+  <nav class="site-nav">
+    <div class="topbar">
+      <a class="brand" href="#home"><span class="brand-mark">D</span> Portfolio ✨</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Service</a>
+        <a href="#projects">Project</a>
+        <a href="#experience">Experience</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+        <button id="theme-toggle" type="button">🌙 Dark Mode</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">✨ Web Programming Portfolio</p>
+        <h1 class="hero-name">Hello, I'm San Miguel, Dionalyn S. ✨</h1>
+        <p class="tagline">A passionate and hardworking student with a strong interest in technology, web development and creating digital solutions.</p>
+        <p class="tagline"><b>Section: BSIS-1202</b></p>
+        <p class="tagline">Bachelor of Science in Information System - City College of Angeles</p>
+        <a class="btn" href="#contact">Contact Me</a>
+        <a class="btn" href="#projects">View My Projects</a>
+      </div>
+
+      <figure class="portrait">
+        <div class="portrait-frame">
+          <img src="https://i.ibb.co/hxZVW2JN/893577503-1115115104777589-2167555602373858264-n.jpg" alt="Dionalyn S. San Miguel" class="portrait-photo">
+        </div>
+      </figure>
+    </div>
+  </header>
+
+  <main>
+<section id="about">
+      <h2>👤 ABOUT ME</h2>
+      <p class="about-role">2nd Year BSIS Student - City College of Angeles</p>
+      <p class="about-text">I am a dedicated and motivated 2nd year student at City College of Angeles taking Bachelor of Science in Information Systems. I enjoy learning new things about technology, especially web development.</p>
+      <p class="about-text">My goal is to become a skilled IT professional in the future and to create websites that can help people. I believe that with hard work and continuous learning, I can achieve my dreams.</p>
+
+      <h3>My Hobbies</h3>
+      <ul>
+        <li>Learning about technology</li>
+        <li>Listening to music</li>
+        <li>Exploring web design</li>
+        <li>Watching tutorials on YouTube</li>
+        <li>Practicing HTML and CSS</li>
+        <li>Spending time with family and friends</li>
+      </ul>
+
+      <p>Visit my favorite website: <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a></p>
+    </section>
+
+    <section id="services">
+      <h2>⚙️ SERVICE</h2>
+      <p class="about-text">These are the skills I have learned and continuously improving as a student.</p>
+
+      <div class="service-list">
+        <div class="service-card">
+          <h3>💻 HTML</h3>
+          <p>80% - I can create structure using HTML.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>🎨 Basic CSS</h3>
+          <p>65% - I can style and design websites.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>🧩 Problem Solving</h3>
+          <p>Teamwork and Communication</p>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="skill">
+          <p><span>HTML</span><span>80%</span></p>
+          <div class="skill-track"><span class="skill-fill fill-80"></span></div>
+        </div>
+
+        <div class="skill">
+          <p><span>Basic CSS</span><span>65%</span></p>
+          <div class="skill-track"><span class="skill-fill fill-65"></span></div>
+        </div>
+
+        <div class="skill">
+          <p><span>JavaScript</span><span>50%</span></p>
+          <div class="skill-track"><span class="skill-fill fill-50"></span></div>
+        </div>
+
+        <div class="skill">
+          <p><span>Layout</span><span>35%</span></p>
+          <div class="skill-track"><span class="skill-fill fill-35"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>💻 PROJECT</h2>
+      <p class="about-text">Here are some of the projects I have created while learning web development.</p>
+
+      <div class="project-list">
+        <article class="project-card">
+          <h3>✨ Personal Portfolio Website</h3>
+          <p>A personal website created using HTML and CSS to showcase information about me, including skills, education, and projects.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>🎨 Canva Portfolio Design</h3>
+          <p>Designed a personal portfolio using Canva to present my personal information, skills, educational background, and projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>🎓 EXPERIENCE</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>College</h3>
+          <p>Bachelor of Science in Information Systems<br>City College of Angeles - 2nd Year, 2025 - Present</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Senior High School</h3>
+          <p>Angeles City National High School</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Junior High School</h3>
+          <p>Angeles City National High School</p>
+        </div>
+      </div>
+
+      <p class="about-text">I am proud to be a student of City College of Angeles. I continue to study hard to achieve my goals and to make my family proud.</p>
+    </section>
+
+    <section id="contact">
+      <h2>✉️ CONTACT</h2>
+      <p class="about-text">If you want to know more about me or my projects, you can contact me using the information below or by filling out the form.</p>
+
+      <ul>
+        <li><b>Email:</b> dionasanmiguel0@gmail.com</li>
+        <li><b>Phone:</b> 09812204651</li>
+        <li><b>Location:</b> Kalye Onse, Purok 5, Brgy. Pampanga, Angeles City</li>
+        <li><b>Course:</b> BSIS-1202</li>
+        <li><b>School:</b> City College of Angeles</li>
+      </ul>
+
+      <form id="contact-form">
+        <label>Name<input name="name" type="text" placeholder="Enter your name" required></label>
+        <label>Email<input name="email" type="email" placeholder="Enter your email" required></label>
+        <label>Message<input name="message" type="text" placeholder="Enter your message" required></label>
+        <button type="submit" class="btn">Send ✨</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>🌐 FOOTER</h2>
+      <p>© <span id="year">2026</span> Dionalyn S. San Miguel<br>All Rights Reserved<br>Bachelor of Science in Information System<br>City College of Angeles</p>
+      <p>Thank you for visiting my portfolio! ✨ I hope you liked my work.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="year2">2026</span> Dionalyn S. San Miguel - BSIS-1202 ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
